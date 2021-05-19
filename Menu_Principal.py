@@ -94,6 +94,12 @@ while Ciclo_Principal == True:
                 Video = Videos()
                 Video.consultar_todo()
 
+            elif Opcion_Videos == 3:
+                
+                IDV = input('Ingrese el ID del Video(Si no se devuelve ningun resultado es porque no existe): ')
+                Video = Videos()
+                Video.consultar_por_id(IDV)
+
     elif Opcion_Principal == 3:
         pass
     elif Opcion_Principal == 4:
