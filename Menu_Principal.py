@@ -39,6 +39,12 @@ while Ciclo_Principal == True:
                 Tema.guardar()
                 print('Guardado con exito')
 
+            elif Opcion_Temas == 2:
+                
+                print('Desplegando todos los Temas. Ejemplo: ID | NOMBRE DEL TEMA')
+                Tema = Temas()
+                Tema.consultar_todo()
+
     elif Opcion_Principal == 2:
         pass
     elif Opcion_Principal == 3:
