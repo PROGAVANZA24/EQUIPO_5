@@ -185,10 +185,12 @@ while Ciclo_Principal == True:
 
                 elif Opcion_Cursos_Temas == 2:
                 
-                print('Desplegando todos los Videos asignados a un Tema de un Curso.')
-                print('Ejemplo: ID CURSO-TEMA | ID CURSO | ID TEMA')
-                CurTe = Cursos_Temas()
+                    print('Desplegando todos los Videos asignados a un Tema de un Curso.')
+                    print('Ejemplo: ID CURSO-TEMA | ID CURSO | ID TEMA')
+                    CurTe = Cursos_Temas()
                 CurTe.consultar_todo()
+
+                
 
     elif Opcion_Principal == 5:
         pass
