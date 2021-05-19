@@ -288,6 +288,14 @@ while Ciclo_Principal == True:
                 IDE = input('Ingrese el ID del Empleado(Si no se devuelve ningun resultado es porque no existe): ')
                 Empleado = Empleados()
                 Empleado.consultar_por_id(IDE)
+
+            elif Opcion_Empleados == 4:
+                
+                Ciclo_Empleados = False
+            
+            else:
+                
+                print('Opcion no valida')
     
     #---OPCION PARA SALIR DEL MENU PRINCIPAL---
 
