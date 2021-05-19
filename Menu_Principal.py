@@ -183,14 +183,26 @@ while Ciclo_Principal == True:
                 CurTe.guardar()
                 print('Guardado con exito')
 
-                elif Opcion_Cursos_Temas == 2:
+            elif Opcion_Cursos_Temas == 2:
                 
-                    print('Desplegando todos los Videos asignados a un Tema de un Curso.')
-                    print('Ejemplo: ID CURSO-TEMA | ID CURSO | ID TEMA')
-                    CurTe = Cursos_Temas()
+                print('Desplegando todos los Videos asignados a un Tema de un Curso.')
+                print('Ejemplo: ID CURSO-TEMA | ID CURSO | ID TEMA')
+                CurTe = Cursos_Temas()
                 CurTe.consultar_todo()
 
+            elif Opcion_Cursos_Temas == 3:
                 
+                IDCT = input('Ingrese el ID del Tema asignado a un Curso(Si no se devuelve ningun resultado es porque no existe): ')
+                TeCu = Cursos_Temas()
+                TeCu.consultar_por_id(IDCT)
+
+            elif Opcion_Cursos_Temas == 4:
+                
+                Ciclo_Cursos_Temas = False
+            
+            else:
+                
+                print('Opcion no valida')
 
     elif Opcion_Principal == 5:
         pass
