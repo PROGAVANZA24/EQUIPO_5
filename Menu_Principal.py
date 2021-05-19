@@ -100,6 +100,14 @@ while Ciclo_Principal == True:
                 Video = Videos()
                 Video.consultar_por_id(IDV)
 
+            elif Opcion_Videos == 4:
+                
+                Ciclo_Videos = False
+            
+            else:
+                
+                print('Opcion no valida')
+
     elif Opcion_Principal == 3:
         pass
     elif Opcion_Principal == 4:
