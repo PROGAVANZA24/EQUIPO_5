@@ -17,3 +17,20 @@ class Videos:
         f = open('C:\\Archivos_Progra\\PIA\\EQUIPO_5\\Videos.txt')
         print (f.read())
         f.close
+
+    def consultar_por_id(self, id):
+
+        self.id = str(id)
+
+        f = open('C:\\Archivos_Progra\\PIA\\EQUIPO_5\\Videos.txt')
+
+        for linea in f:
+            
+            datos = linea.strip().split()
+            
+            if datos[1] == self.id:
+                
+                datos = linea.strip().split('|')
+                print(datos)
+
+        f.close
