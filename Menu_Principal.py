@@ -88,6 +88,12 @@ while Ciclo_Principal == True:
                 Video.guardar()
                 print('Guardado con exito')
 
+            elif Opcion_Videos == 2:
+                
+                print('Desplegando todos los Videos. Ejemplo: ID | NOMBRE DEL VIDEO | URL | FECHA DE PUBLICACION')
+                Video = Videos()
+                Video.consultar_todo()
+
     elif Opcion_Principal == 3:
         pass
     elif Opcion_Principal == 4:
