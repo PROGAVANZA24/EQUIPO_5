@@ -148,6 +148,14 @@ while Ciclo_Principal == True:
                 ViTeCu = Cursos_Temas_Videos()
                 ViTeCu.consultar_por_id(IDVTC)
 
+            elif Opcion_Cursos_Temas_Videos == 4:
+                
+                Ciclo_Cursos_Temas_Videos = False
+            
+            else:
+                
+                print('Opcion no valida')
+
     elif Opcion_Principal == 4:
         pass
     elif Opcion_Principal == 5:
