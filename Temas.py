@@ -9,3 +9,9 @@ class Temas:
         f = open('C:\\Archivos_Progra\\PIA\\EQUIPO_5\\Archivos_TXT\\Temas.txt', 'a', encoding = 'utf8')
         f.write(f'ID: {self.__id_tema} | TEMA: {self.__nombre}' + '\n')
         f.close 
+
+    def consultar_todo(self):
+
+        f = open('C:\\Archivos_Progra\\PIA\\EQUIPO_5\\Archivos_TXT\\Temas.txt')
+        print (f.read())
+        f.close
