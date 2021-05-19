@@ -28,7 +28,17 @@ while Ciclo_Principal == True:
             print('2.-Consultar la informacion de todos los Temas')
             print('3.-Consultar la informacion de un Tema por ID')
             print('4.-Regresar al menu principal')
-            
+
+            Opcion_Temas = int(input('Elija el numero de la seccion deseada: '))
+
+            if Opcion_Temas == 1:
+                
+                T1 = int(input('Ingrese el ID del Tema: '))
+                T2 = input('Ingrese el nombre del Tema: ')
+                Tema = Temas(T1, T2)
+                Tema.guardar()
+                print('Guardado con exito')
+
     elif Opcion_Principal == 2:
         pass
     elif Opcion_Principal == 3:
