@@ -303,5 +303,7 @@ while Ciclo_Principal == True:
         
         Ciclo_Principal = False
 
+    #---MENSAJE DE ERROR DE OPCION INVALIDA---
+    
     else:
         print('Opcion no valida')
