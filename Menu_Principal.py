@@ -142,6 +142,12 @@ while Ciclo_Principal == True:
                 CurTeVid = Cursos_Temas_Videos()
                 CurTeVid.consultar_todo()
 
+            elif Opcion_Cursos_Temas_Videos == 3:
+                
+                IDVTC = input('Ingrese el ID del Video asignado a un Tema de un Curso(Si no se devuelve ningun resultado es porque no existe): ')
+                ViTeCu = Cursos_Temas_Videos()
+                ViTeCu.consultar_por_id(IDVTC)
+
     elif Opcion_Principal == 4:
         pass
     elif Opcion_Principal == 5:
