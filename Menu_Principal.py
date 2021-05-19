@@ -16,6 +16,8 @@ while Ciclo_Principal == True:
 
     Opcion_Principal = int(input('Elija el numero de la seccion deseada: '))
 
+    #---MENU PARA LA SECCION DE TEMAS---
+
     if Opcion_Principal == 1:
         
         Ciclo_Temas = True
@@ -69,7 +71,12 @@ while Ciclo_Principal == True:
         pass
     elif Opcion_Principal == 6:
         pass
+    
+    #---OPCION PARA SALIR DEL MENU PRINCIPAL---
+
     elif Opcion_Principal == 7:
-        pass
+        
+        Ciclo_Principal = False
+
     else:
         print('Opcion no valida')
