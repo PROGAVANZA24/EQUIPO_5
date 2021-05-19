@@ -51,7 +51,13 @@ while Ciclo_Principal == True:
                 Tema = Temas()
                 Tema.consultar_por_id(IDT)
 
+            elif Opcion_Temas == 4:
+                
+                Ciclo_Temas = False
             
+            else:
+                
+                print('Opcion no valida')
 
     elif Opcion_Principal == 2:
         pass
