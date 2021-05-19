@@ -282,6 +282,12 @@ while Ciclo_Principal == True:
                 print('Desplegando todos los Cursos. Ejemplo: ID EMPLEADO | NOMBRE | DESCRIPCION')
                 Empleado = Empleados()
                 Empleado.consultar_todo()
+
+            elif Opcion_Empleados == 3:
+                
+                IDE = input('Ingrese el ID del Empleado(Si no se devuelve ningun resultado es porque no existe): ')
+                Empleado = Empleados()
+                Empleado.consultar_por_id(IDE)
     
     #---OPCION PARA SALIR DEL MENU PRINCIPAL---
 
