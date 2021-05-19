@@ -1,6 +1,7 @@
 from Temas import Temas
 from Videos import Videos
 from Cursos_Temas_Videos import Cursos_Temas_Videos
+from Cursos_Temas import Cursos_Temas
 
 Ciclo_Principal = True
 
@@ -156,8 +157,21 @@ while Ciclo_Principal == True:
                 
                 print('Opcion no valida')
 
+    #---MENU CURSOS TEMAS---
+
     elif Opcion_Principal == 4:
-        pass
+        
+        Ciclo_Cursos_Temas = True
+
+        while Ciclo_Cursos_Temas == True:
+            
+            print('---MENU TEMAS ASIGNADOS AL CURSO---')
+            print('Acciones Disponibles:')
+            print('1.-Guardar un Tema asignado a un Curso')
+            print('2.-Consultar la informacion de todos los Temas asignados a un Curso')
+            print('3.-Consultar la informacion de un Tema asignado a un Curso por ID')
+            print('4.-Regresar al menu principal')
+            
     elif Opcion_Principal == 5:
         pass
     elif Opcion_Principal == 6:
