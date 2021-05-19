@@ -108,8 +108,21 @@ while Ciclo_Principal == True:
                 
                 print('Opcion no valida')
 
+    #---MENU CLASE TEMA VIDEOS---
+
     elif Opcion_Principal == 3:
-        pass
+        
+        Ciclo_Cursos_Temas_Videos = True
+
+        while Ciclo_Cursos_Temas_Videos == True:
+
+            print('---MENU VIDEOS ASIGNADOS A UN VIDEO ASIGNADO A UN TEMA DE UN CURSO---')
+            print('Acciones Disponibles:')
+            print('1.-Guardar un Video asignado a un Tema de un Curso')
+            print('2.-Consultar la informacion de todos los Videos asignados a un Tema de un Curso')
+            print('3.-Consultar la informacion de un Video asignado a un Tema de un Curso por ID')
+            print('4.-Regresar al menu principal')
+            
     elif Opcion_Principal == 4:
         pass
     elif Opcion_Principal == 5:
