@@ -243,6 +243,13 @@ while Ciclo_Principal == True:
                 Curso = Cursos()
                 Curso.consultar_por_id(IDC)
 
+            elif Opcion_Cursos == 4:
+                
+                Ciclo_Cursos = False
+                
+            else:
+                print('Opcion no valida')
+
     elif Opcion_Principal == 6:
         pass
     
