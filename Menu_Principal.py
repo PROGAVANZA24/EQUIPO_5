@@ -122,7 +122,18 @@ while Ciclo_Principal == True:
             print('2.-Consultar la informacion de todos los Videos asignados a un Tema de un Curso')
             print('3.-Consultar la informacion de un Video asignado a un Tema de un Curso por ID')
             print('4.-Regresar al menu principal')
-            
+
+            Opcion_Cursos_Temas_Videos = int(input('Elija el numero de la seccion deseada: '))
+
+            if Opcion_Cursos_Temas_Videos == 1:
+                
+                CTV1 = int(input('Ingrese el ID del Video asignado a un Tema de un Curso: '))
+                CTV2 = int(input('Ingrese el ID del Tema asignado al Curso: '))
+                CTV3 = int(input('Ingrese el ID del Video: '))
+                CurTeVid = Cursos_Temas_Videos(CTV1, CTV2, CTV3)
+                CurTeVid.guardar()
+                print('Guardado con exito')
+
     elif Opcion_Principal == 4:
         pass
     elif Opcion_Principal == 5:
