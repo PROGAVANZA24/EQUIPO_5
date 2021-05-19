@@ -13,3 +13,22 @@ while Ciclo_Principal == True:
     print('5.-Cursos')
     print('6.-Empleados')
     print('7.-Salir')
+
+    Opcion_Principal = int(input('Elija el numero de la seccion deseada: '))
+
+    if Opcion_Principal == 1:
+        pass
+    elif Opcion_Principal == 2:
+        pass
+    elif Opcion_Principal == 3:
+        pass
+    elif Opcion_Principal == 4:
+        pass
+    elif Opcion_Principal == 5:
+        pass
+    elif Opcion_Principal == 6:
+        pass
+    elif Opcion_Principal == 7:
+        pass
+    else:
+        print('Opcion no valida')
