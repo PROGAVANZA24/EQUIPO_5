@@ -76,6 +76,18 @@ while Ciclo_Principal == True:
             print('3.-Consultar la informacion de un Video por ID')
             print('4.-Regresar al menu principal')
 
+            Opcion_Videos = int(input('Elija el numero de la seccion deseada: '))
+
+            if Opcion_Videos == 1:
+                
+                V1 = int(input('Ingrese el ID del Video: '))
+                V2 = input('Ingrese el nombre del Video: ')
+                V3 = input('Ingrese la url del Video: ')
+                V4 = input('Ingrese la fecha de publicacion del Video: ')
+                Video = Videos(V1, V2, V3, V4)
+                Video.guardar()
+                print('Guardado con exito')
+
     elif Opcion_Principal == 3:
         pass
     elif Opcion_Principal == 4:
