@@ -2,6 +2,7 @@ from Temas import Temas
 from Videos import Videos
 from Cursos_Temas_Videos import Cursos_Temas_Videos
 from Cursos_Temas import Cursos_Temas
+from Cursos import Cursos
 
 Ciclo_Principal = True
 
@@ -229,7 +230,13 @@ while Ciclo_Principal == True:
                 Curso = Cursos(C1, C2, C3)
                 Curso.guardar()
                 print('Guardado con exito')
+
+            elif Opcion_Cursos == 2:
                 
+                print('Desplegando todos los Cursos. Ejemplo: ID CURSO | DESCRIPCION | ID EMPLEADO')
+                Curso = Cursos()
+                Curso.consultar_todo()
+
     elif Opcion_Principal == 6:
         pass
     
