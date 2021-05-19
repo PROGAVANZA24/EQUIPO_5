@@ -171,7 +171,18 @@ while Ciclo_Principal == True:
             print('2.-Consultar la informacion de todos los Temas asignados a un Curso')
             print('3.-Consultar la informacion de un Tema asignado a un Curso por ID')
             print('4.-Regresar al menu principal')
-            
+
+            Opcion_Cursos_Temas = int(input('Elija el numero de la seccion deseada: '))
+
+            if Opcion_Cursos_Temas == 1:
+                
+                CT1 = int(input('Ingrese el ID del Tema asignado a un Curso: '))
+                CT2 = int(input('Ingrese el ID del Curso: '))
+                CT3 = int(input('Ingrese el ID del Tema: '))
+                CurTe = Cursos_Temas(CT1, CT2, CT3)
+                CurTe.guardar()
+                print('Guardado con exito')
+
     elif Opcion_Principal == 5:
         pass
     elif Opcion_Principal == 6:
