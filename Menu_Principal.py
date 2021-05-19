@@ -218,7 +218,18 @@ while Ciclo_Principal == True:
             print('2.-Consultar la informacion de todos los Cursos')
             print('3.-Consultar la informacion de un Curso por ID')
             print('4.-Regresar al menu principal')
-            
+
+            Opcion_Cursos = int(input('Elija el numero de la seccion deseada: '))
+
+            if Opcion_Cursos == 1:
+                
+                C1 = int(input('Ingrese el ID del Curso: '))
+                C2 = input('Ingrese la descripcion del Curso: ')
+                C3 = int(input('Ingrese el ID del Empleado: '))
+                Curso = Cursos(C1, C2, C3)
+                Curso.guardar()
+                print('Guardado con exito')
+                
     elif Opcion_Principal == 6:
         pass
     
