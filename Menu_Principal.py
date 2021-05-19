@@ -3,6 +3,7 @@ from Videos import Videos
 from Cursos_Temas_Videos import Cursos_Temas_Videos
 from Cursos_Temas import Cursos_Temas
 from Cursos import Cursos
+from Empleados import Empleados
 
 Ciclo_Principal = True
 
@@ -250,8 +251,20 @@ while Ciclo_Principal == True:
             else:
                 print('Opcion no valida')
 
+    #---MENU EMPLEADOS---
+
     elif Opcion_Principal == 6:
-        pass
+        
+        Ciclo_Empleados = True
+
+        while Ciclo_Empleados == True:
+
+            print('---MENU EMPLEADOS---')
+            print('Acciones Disponibles:')
+            print('1.-Guardar un Empleado')
+            print('2.-Consultar la informacion de todos los Empleados')
+            print('3.-Consultar la informacion de un Empleado por ID')
+            print('4.-Regresar al menu principal')
     
     #---OPCION PARA SALIR DEL MENU PRINCIPAL---
 
