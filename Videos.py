@@ -11,3 +11,9 @@ class Videos:
         f = open('C:\\Archivos_Progra\\PIA\\EQUIPO_5\\Videos.txt', 'a', encoding = 'utf8')
         f.write(f'ID: {self.__id_video} | TEMA: {self.__nombre} | URL: {self.__url} | FECHA DE PUBLICACION: {self.__fecha_publicacion}' + '\n')
         f.close
+
+    def consultar_todo(self):
+
+        f = open('C:\\Archivos_Progra\\PIA\\EQUIPO_5\\Videos.txt')
+        print (f.read())
+        f.close
