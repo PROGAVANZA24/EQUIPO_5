@@ -16,3 +16,20 @@ class Cursos_Temas_Videos:
         f = open('C:\\Users\\richa\\Desktop\\PIA_Prueba\\Archivos de Texto\\Cursos_Temas_Videos.txt')
         print (f.read())
         f.close
+
+    def consultar_por_id(self, id):
+
+        self.id = str(id)
+
+        f = open('C:\\Users\\richa\\Desktop\\PIA_Prueba\\Archivos de Texto\\Cursos_Temas_Videos.txt')
+
+        for linea in f:
+            
+            datos = linea.strip().split()
+            
+            if datos[2] == self.id:
+                
+                datos = linea.strip().split('|')
+                print(datos)
+
+        f.close
