@@ -61,8 +61,21 @@ while Ciclo_Principal == True:
                 
                 print('Opcion no valida')
 
+    #---MENU PARA LA SECCION DE VIDEOS---
+
     elif Opcion_Principal == 2:
-        pass
+        
+        Ciclo_Videos = True
+
+        while Ciclo_Videos == True:
+
+            print('---MENU VIDEOS---')
+            print('Acciones Disponibles:')
+            print('1.-Guardar un Video')
+            print('2.-Consultar la informacion de todos los Videos')
+            print('3.-Consultar la informacion de un Video por ID')
+            print('4.-Regresar al menu principal')
+
     elif Opcion_Principal == 3:
         pass
     elif Opcion_Principal == 4:
