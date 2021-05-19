@@ -1,5 +1,6 @@
 from Temas import Temas
 from Videos import Videos
+from Cursos_Temas_Videos import Cursos_Temas_Videos
 
 Ciclo_Principal = True
 
@@ -108,7 +109,7 @@ while Ciclo_Principal == True:
                 
                 print('Opcion no valida')
 
-    #---MENU CLASE TEMA VIDEOS---
+    #---MENU CURSOS TEMA VIDEOS---
 
     elif Opcion_Principal == 3:
         
@@ -133,6 +134,13 @@ while Ciclo_Principal == True:
                 CurTeVid = Cursos_Temas_Videos(CTV1, CTV2, CTV3)
                 CurTeVid.guardar()
                 print('Guardado con exito')
+
+            elif Opcion_Cursos_Temas_Videos == 2:
+                
+                print('Desplegando todos los Videos asignados a un Tema de un Curso.')
+                print('Ejemplo: ID CURSO-TEMA-VIDEO | ID CURSO-TEMA | ID VIDEO')
+                CurTeVid = Cursos_Temas_Videos()
+                CurTeVid.consultar_todo()
 
     elif Opcion_Principal == 4:
         pass
