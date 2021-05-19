@@ -265,6 +265,17 @@ while Ciclo_Principal == True:
             print('2.-Consultar la informacion de todos los Empleados')
             print('3.-Consultar la informacion de un Empleado por ID')
             print('4.-Regresar al menu principal')
+
+            Opcion_Empleados = int(input('Elija el numero de la seccion deseada: '))
+
+            if Opcion_Empleados == 1:
+                
+                E1 = int(input('Ingrese el ID del Empleado: '))
+                E2 = input('Ingrese el nombre del Empleado: ')
+                E3 = input('Ingrese la direccion del Empleado: ')
+                Empleado = Empleados(E1, E2, E3)
+                Empleado.guardar()
+                print('Guardado con exito')
     
     #---OPCION PARA SALIR DEL MENU PRINCIPAL---
 
