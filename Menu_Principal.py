@@ -237,6 +237,12 @@ while Ciclo_Principal == True:
                 Curso = Cursos()
                 Curso.consultar_todo()
 
+            elif Opcion_Cursos == 3:
+                
+                IDC = input('Ingrese el ID del Curso(Si no se devuelve ningun resultado es porque no existe): ')
+                Curso = Cursos()
+                Curso.consultar_por_id(IDC)
+
     elif Opcion_Principal == 6:
         pass
     
