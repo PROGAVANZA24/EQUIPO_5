@@ -276,6 +276,12 @@ while Ciclo_Principal == True:
                 Empleado = Empleados(E1, E2, E3)
                 Empleado.guardar()
                 print('Guardado con exito')
+
+            elif Opcion_Empleados == 2:
+                
+                print('Desplegando todos los Cursos. Ejemplo: ID EMPLEADO | NOMBRE | DESCRIPCION')
+                Empleado = Empleados()
+                Empleado.consultar_todo()
     
     #---OPCION PARA SALIR DEL MENU PRINCIPAL---
 
