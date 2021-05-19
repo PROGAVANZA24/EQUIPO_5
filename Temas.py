@@ -15,3 +15,20 @@ class Temas:
         f = open('C:\\Archivos_Progra\\PIA\\EQUIPO_5\\Archivos_TXT\\Temas.txt')
         print (f.read())
         f.close
+
+    def consultar_por_id(self, id):
+
+        self.id = str(id)
+
+        f = open('C:\\Archivos_Progra\\PIA\\EQUIPO_5\\Archivos_TXT\\Temas.txt')
+        
+        for linea in f:
+
+            datos = linea.strip().split()
+            
+            if datos[1] == self.id:
+
+                datos = linea.strip().split('|')
+                print(datos)
+
+        f.close
