@@ -7,13 +7,13 @@ class Empleados:
 
     def guardar(self):
         
-        f = open('C:\\Users\\richa\\Desktop\\PIA_Prueba\\Archivos de Texto\\Empleados.txt', 'a', encoding = 'utf8')
+        f = open('C:\\Archivos_Progra\\PIA\\EQUIPO_5\\Empleados.txt', 'a', encoding = 'utf8')
         f.write(f'ID: {self.__id_empleado} | NOMBRE: {self.__nombre} | DIRECCION: {self.__direccion}' + '\n')
         f.close
 
     def consultar_todo(self):
 
-        f = open('C:\\Users\\richa\\Desktop\\PIA_Prueba\\Archivos de Texto\\Empleados.txt')
+        f = open('C:\\Archivos_Progra\\PIA\\EQUIPO_5\\Empleados.txt')
         print (f.read())
         f.close
 
@@ -21,7 +21,7 @@ class Empleados:
 
         self.id = str(id)
 
-        f = open('C:\\Users\\richa\\Desktop\\PIA_Prueba\\Archivos de Texto\\Empleados.txt')
+        f = open('C:\\Archivos_Progra\\PIA\\EQUIPO_5\\Empleados.txt')
 
         for linea in f:
             
