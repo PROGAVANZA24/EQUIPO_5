@@ -45,6 +45,14 @@ while Ciclo_Principal == True:
                 Tema = Temas()
                 Tema.consultar_todo()
 
+            elif Opcion_Temas == 3:
+                
+                IDT = input('Ingrese el ID del Tema(Si no se devuelve ningun resultado es porque no existe): ')
+                Tema = Temas()
+                Tema.consultar_por_id(IDT)
+
+            
+
     elif Opcion_Principal == 2:
         pass
     elif Opcion_Principal == 3:
