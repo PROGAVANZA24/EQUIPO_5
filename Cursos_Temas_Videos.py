@@ -4,3 +4,9 @@ class Cursos_Temas_Videos:
         self.__id_CTV = id_CTV
         self.__id_CT = id_CT
         self.__id_video = id_video
+
+    def guardar(self):
+        
+        f = open('C:\\Users\\richa\\Desktop\\PIA_Prueba\\Archivos de Texto\\Cursos_Temas_Videos.txt', 'a', encoding = 'utf8')
+        f.write(f'ID CURSO-TEMA-VIDEO: {self.__id_CTV} | ID CURSO-TEMA: {self.__id_CT} | ID VIDEO: {self.__id_video}' + '\n')
+        f.close
